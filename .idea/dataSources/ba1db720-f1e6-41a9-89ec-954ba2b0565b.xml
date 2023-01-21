@@ -11,9 +11,8 @@
 4||10|c|G
 4||10|C|G
 4||10|T|G</Grants>
-      <IntrospectionStateNumber>742</IntrospectionStateNumber>
       <ServerVersion>15.1</ServerVersion>
-      <StartupTime>1674295234</StartupTime>
+      <StartupTime>1674295606</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -1403,7 +1402,6 @@ false posixrules
 13186||10|C|G
 13186||-9223372036854775808|U|G
 13186||10|U|G</Grants>
-      <IntrospectionStateNumber>743</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <Relations>sequence|table|16393|16394|1
 sequence|table|16399|16400|1
@@ -4815,7 +4813,6 @@ sequence|table|16399|16400|1
     <schema id="261" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>743</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>

@@ -25,10 +25,11 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8080:8080
+
   family-member-app:
     restart: on-failure
     build:
       context: ./FamilyMemberApp
       dockerfile: Dockerfile
     ports:
-      - 8090:8090
+      - 8000:8000

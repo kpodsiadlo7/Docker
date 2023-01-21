@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="" />
+    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/configuration/CoreConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/domain/FamilyMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/web/FamilyMemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ba1db720-f1e6-41a9-89ec-954ba2b0565b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ba1db720-f1e6-41a9-89ec-954ba2b0565b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ba1db720-f1e6-41a9-89ec-954ba2b0565b/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ba1db720-f1e6-41a9-89ec-954ba2b0565b/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/domain/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/domain/Family.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/repository/FamilyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/repository/FamilyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/FamilyAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/FamilyAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/FamilyMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/FamilyMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flyway/V2__create_family_member_app_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/flyway/V2__create_family_member_app_db.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +36,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -30,6 +51,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2KbT09pKD6ygR0opgZ7rnEtXh0y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,7 +67,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/karol/IdeaProjects/stare projekty/todo-app",
+    "last_opened_file_path": "C:/Users/karol/IdeaProjects/do pracy/application",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "Docker",
     "spring.configuration.checksum": "e38b1e8b5f896cef178ba8f03dc7755c"
@@ -124,6 +148,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.family-member-app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="family-member-app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.flyway: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -139,6 +176,7 @@
     </configuration>
     <list>
       <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.flyway: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="JUnit.FamilyAppApplicationTests" />
@@ -149,6 +187,7 @@
       <list>
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.flyway: Compose Deployment" />
         <item itemvalue="JUnit.FamilyAppApplicationTests" />
       </list>
@@ -166,11 +205,22 @@
       <workItem from="1674246071076" duration="4087000" />
       <workItem from="1674250428816" duration="6975000" />
       <workItem from="1674283591190" duration="2563000" />
-      <workItem from="1674287658790" duration="7857000" />
+      <workItem from="1674287658790" duration="25532000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -14,6 +14,7 @@ public class FamilyMember {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private Long familyId;
     private String givenName;
     private String familyName;
     private int age;

@@ -6,14 +6,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class FamilyMapper {
-    public FamilyDto mapToFamilyDto(Family family){
-        return new FamilyDto(
-                family.getFamilyName(),
-                "",
-                family.getNrOfAdults(),
-                family.getNrOfChildren(),
-                family.getNrOfInfants(),
-                0
+
+    public Family mapToFamily(final FamilyDto familyDto) {
+        return new Family(
+                familyDto.getFamilyName(),
+                familyDto.getNrOfAdults(),
+                familyDto.getNrOfChildren(),
+                familyDto.getNrOfInfants()
         );
     }
 }
