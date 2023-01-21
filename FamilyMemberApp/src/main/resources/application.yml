@@ -1,0 +1,14 @@
+spring:
+  flyway:
+    user: 'postgres'
+    password: 'password'
+    url: 'jdbc:postgresql://postgres:5432/postgres'
+    baseline-on-migrate: true
+  datasource:
+    url: 'jdbc:postgresql://postgres:5432/postgres'
+    username: 'postgres'
+    password: 'password'
+    driver-class-name: 'org.postgresql.Driver'
+  jpa:
+    hibernate:
+      ddl-auto: validate
