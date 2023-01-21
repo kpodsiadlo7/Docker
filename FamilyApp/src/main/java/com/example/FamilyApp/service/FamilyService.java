@@ -28,23 +28,10 @@ public class FamilyService {
         this.restTemplate = restTemplate;
     }
 
-    /*
-        public FamilyDto getAllFamilyByFamilyId(final long familyId) {
-            var familyMemberList = getDataFromAnotherDb();
-            return familyMapper.mapToFamilyDto(familyRepository.findById(familyId), familyMemberList);
-        }
-
-        private Object getDataFromAnotherDb() {
-            return null;
-        }
-     */
     private void sendDataToFamilyMemberController(final Family family, final Long familyId) {
         for (FamilyMemberDto dto : family.getFamilyMembersDto()) {
             dto.setFamilyName(family.getFamilyName());
             dto.setFamilyId(familyId);
-        }
-        for (FamilyMemberDto dto : family.getFamilyMembersDto()) {
-            log.info(dto.getFamilyId().toString());
         }
         restTemplate.postForLocation(FAMILY_MEMBER_URL + CREATE_FAMILY_MEMBER_URL, family.getFamilyMembersDto());
     }

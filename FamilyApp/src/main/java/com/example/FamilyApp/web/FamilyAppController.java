@@ -5,7 +5,10 @@ import com.example.FamilyApp.service.FamilyService;
 import com.example.FamilyApp.web.dto.FamilyDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
@@ -31,6 +34,7 @@ public class FamilyAppController {
     @PostMapping("/createfamily")
     public ResponseEntity<String> createFamily(@RequestBody FamilyDto familyDto) {
         log.info(familyDto.toString());
-        return ResponseEntity.ok(String.format("Family nr: %d",familyService.createFamily(familyMapper.mapToFamilyFromFamilyDto(familyDto))));
+        return ResponseEntity.ok(String.format("Family nr: %d",
+                familyService.createFamily(familyMapper.mapToFamilyFromFamilyDto(familyDto))));
     }
 }

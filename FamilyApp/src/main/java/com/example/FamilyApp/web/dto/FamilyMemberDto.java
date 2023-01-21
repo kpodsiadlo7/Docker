@@ -13,7 +13,7 @@ public class FamilyMemberDto {
     /**
      * below
      * variables that are automatically updated
-     * */
+     */
     private String familyName;
     private Long familyId;
 
