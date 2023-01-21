@@ -7,18 +7,17 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.util.UriComponentsBuilder;
 
 @Slf4j
 @Service
 public class FamilyService {
 
     @Value("${RETURN_FAMILY_MEMBER_URL}")
-    private String getFamilyMembersUrl;
+    private String RETURN_FAMILY_MEMBERS_URL;
     @Value("${CREATE_FAMILY_MEMBER_URL}")
-    private String createFamilyMemberUrl;
+    private String CREATE_FAMILY_MEMBER_URL;
     @Value("${FAMILY.MEMBER.URL}")
-    private String baseFamilyMemberUrl;
+    private String FAMILY_MEMBER_URL;
     private final FamilyRepository familyRepository;
     private final FamilyMapper familyMapper;
     private final RestTemplate restTemplate;
@@ -44,7 +43,10 @@ public class FamilyService {
             dto.setFamilyName(family.getFamilyName());
             dto.setFamilyId(familyId);
         }
-        restTemplate.postForLocation(baseFamilyMemberUrl+createFamilyMemberUrl,family.getFamilyMembersDto());
+        for (FamilyMemberDto dto : family.getFamilyMembersDto()) {
+            log.info(dto.getFamilyId().toString());
+        }
+        restTemplate.postForLocation(FAMILY_MEMBER_URL + CREATE_FAMILY_MEMBER_URL, family.getFamilyMembersDto());
     }
 
 

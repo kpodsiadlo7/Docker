@@ -1,7 +1,9 @@
 package com.example.FamilyApp.web.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
 
+@Getter
 public class FamilyMemberDto {
     @JsonProperty("givenName")
     private String givenName;

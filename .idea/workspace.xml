@@ -4,25 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/Family.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/repository/FamilyMemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/dto/FamilyMemberDto.java" afterDir="false" />
+    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="create method to create family in FamilyAppController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/configuration/CoreConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/configuration/CoreConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/domain/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/domain/FamilyEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/domain/FamilyMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/repository/FamilyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/repository/FamilyRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/FamilyAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/FamilyAppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/FamilyMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/FamilyMemberEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/web/FamilyMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/FamilyMemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/FamilyMemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/FamilyMemberEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/dto/FamilyMemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/dto/FamilyMemberDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +96,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.family-member-app: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="FamilyAppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FamilyApp" />
       <extension name="coverage">
@@ -194,9 +185,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.flyway: Compose Deployment" />
         <item itemvalue="JUnit.FamilyAppApplicationTests" />
       </list>
@@ -216,6 +207,14 @@
       <workItem from="1674283591190" duration="2563000" />
       <workItem from="1674287658790" duration="25532000" />
     </task>
+    <task id="LOCAL-00001" summary="create method to create family in FamilyAppController">
+      <created>1674337519174</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674337519174</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,5 +230,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create method to create family in FamilyAppController" />
+    <option name="LAST_COMMIT_MESSAGE" value="create method to create family in FamilyAppController" />
   </component>
 </project>

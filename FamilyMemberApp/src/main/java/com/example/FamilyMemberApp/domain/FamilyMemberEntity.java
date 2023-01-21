@@ -18,4 +18,11 @@ public class FamilyMemberEntity {
     private String givenName;
     private String familyName;
     private int age;
+
+    public FamilyMemberEntity(final Long familyId, final String givenName, final String familyName, final int age) {
+        this.familyId = familyId;
+        this.givenName = givenName;
+        this.familyName = familyName;
+        this.age = age;
+    }
 }
