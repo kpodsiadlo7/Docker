@@ -5,5 +5,5 @@ RUN mvn -f /home/app/pom.xml clean install
 
 FROM openjdk:17
 COPY --from=build /home/app/target/FamilyMemberApp-0.0.1-SNAPSHOT.jar /usr/local/lib/FamilyMemberApp.jar
-EXPOSE 8080
+EXPOSE 8000
 ENTRYPOINT ["sh", "-c", "java -jar /usr/local/lib/FamilyMemberApp.jar"]

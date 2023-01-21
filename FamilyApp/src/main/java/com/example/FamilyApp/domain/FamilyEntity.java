@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @Table(name = "family_db")
-public class Family {
+public class FamilyEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,7 +18,7 @@ public class Family {
     private int nrOfChildren;
     private int nrOfInfants;
 
-    public Family(final String familyName, final int nrOfAdults, final int nrOfChildren, final int nrOfInfants) {
+    public FamilyEntity(final String familyName, final int nrOfAdults, final int nrOfChildren, final int nrOfInfants) {
         this.familyName = familyName;
         this.nrOfAdults = nrOfAdults;
         this.nrOfChildren = nrOfChildren;

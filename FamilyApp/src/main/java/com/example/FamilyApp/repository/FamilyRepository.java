@@ -1,11 +1,11 @@
 package com.example.FamilyApp.repository;
 
-import com.example.FamilyApp.domain.Family;
+import com.example.FamilyApp.domain.FamilyEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface FamilyRepository extends JpaRepository<Family, Long> {
+public interface FamilyRepository extends JpaRepository<FamilyEntity, Long> {
 
-    Family findById(long familyId);
+    FamilyEntity findById(long familyId);
 }

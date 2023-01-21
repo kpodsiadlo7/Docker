@@ -12,3 +12,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
+
+FAMILY_MEMBER_URL: ${FAMILY_MEMBER_URL}
+CREATE_FAMILY_MEMBER_URL: 'createfamilymember'
+RETURN_FAMILY_MEMBER_URL: 'getfamilymembers'

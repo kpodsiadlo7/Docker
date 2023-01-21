@@ -1,6 +1,5 @@
 version: '3.8'
 services:
-
   postgres:
     image: postgres:latest
     restart: always
@@ -19,6 +18,8 @@ services:
       - postgres
 
   family-app:
+    environment:
+      - FAMILY_MEMBER_URL=http://family-member-app:8000/
     restart: on-failure
     build:
       context: ./FamilyApp

@@ -5,23 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/configuration/CoreConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/domain/FamilyMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/web/FamilyMemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ba1db720-f1e6-41a9-89ec-954ba2b0565b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ba1db720-f1e6-41a9-89ec-954ba2b0565b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ba1db720-f1e6-41a9-89ec-954ba2b0565b/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ba1db720-f1e6-41a9-89ec-954ba2b0565b/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/Family.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/repository/FamilyMemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/dto/FamilyMemberDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/domain/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/domain/Family.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/configuration/CoreConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/configuration/CoreConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/domain/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/domain/FamilyEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/domain/FamilyMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/repository/FamilyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/repository/FamilyRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/FamilyAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/FamilyAppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/FamilyMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/FamilyMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/FamilyMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/FamilyMemberEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/domain/web/FamilyMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/FamilyMemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flyway/V2__create_family_member_app_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/flyway/V2__create_family_member_app_db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +69,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/karol/IdeaProjects/do pracy/application",
+    "last_opened_file_path": "C:/Users/karol/IdeaProjects/Github aktualne projekty/First-Application-frontend",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "Docker",
     "spring.configuration.checksum": "e38b1e8b5f896cef178ba8f03dc7755c"
@@ -96,7 +98,14 @@
       <command value="mvn deploy" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.family-member-app: Compose Deployment">
     <configuration name="FamilyAppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FamilyApp" />
       <extension name="coverage">
@@ -185,9 +194,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.flyway: Compose Deployment" />
         <item itemvalue="JUnit.FamilyAppApplicationTests" />
       </list>

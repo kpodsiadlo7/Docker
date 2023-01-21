@@ -1,18 +1,22 @@
 package com.example.FamilyApp.web;
 
+import com.example.FamilyApp.service.FamilyMapper;
 import com.example.FamilyApp.service.FamilyService;
 import com.example.FamilyApp.web.dto.FamilyDto;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 
+@Slf4j
 @RestController
 @RequestMapping
 public class FamilyAppController {
     private final FamilyService familyService;
+    private final FamilyMapper familyMapper;
 
-    FamilyAppController(final FamilyService familyService) {
+    FamilyAppController(final FamilyService familyService, final FamilyMapper familyMapper) {
         this.familyService = familyService;
+        this.familyMapper = familyMapper;
     }
 
     /*
@@ -22,18 +26,11 @@ public class FamilyAppController {
     }
 
      */
-    @PostMapping("/createfamily")
-    public ResponseEntity<Long> createFamily(@RequestBody FamilyDto familyDto) {
-        System.out.println("family name: " + familyDto.getFamilyName());
-        System.out.println("adults: " + familyDto.getNrOfAdults());
-        System.out.println("infatns: " + familyDto.getNrOfInfants());
-        System.out.println("children: " + familyDto.getNrOfChildren());
-        System.out.println("first member" + familyDto.getFamilyMembers().get(0));
-        return ResponseEntity.ok(familyService.createFamily(familyDto));
-    }
 
-    @GetMapping("/get")
-    public String getSomething() {
-        return familyService.getMember();
+
+    @PostMapping("/createfamily")
+    public ResponseEntity<String> createFamily(@RequestBody FamilyDto familyDto) {
+        log.info(familyDto.toString());
+        return ResponseEntity.ok(String.format("Family nr: %d",familyService.createFamily(familyMapper.mapToFamilyFromFamilyDto(familyDto))));
     }
 }
