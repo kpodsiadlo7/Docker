@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="create test suite for all mappers FamilyApp">
-      <change afterPath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyServiceTestSuite.java" afterDir="false" />
+    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="create test suite for services FamilyApp">
+      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/test/java/com/example/FamilyMemberApp/service/FamilyMemberAppTestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyMapperTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyMapperTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +221,7 @@
       <workItem from="1674283591190" duration="2563000" />
       <workItem from="1674287658790" duration="25532000" />
       <workItem from="1674369605779" duration="5530000" />
-      <workItem from="1674375199268" duration="20405000" />
+      <workItem from="1674375199268" duration="24762000" />
     </task>
     <task id="LOCAL-00001" summary="create method to create family in FamilyAppController">
       <created>1674337519174</created>
@@ -268,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674413058779</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="create test suite for services FamilyApp">
+      <created>1674415467857</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674415467857</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +304,10 @@
     <MESSAGE value="refactor code" />
     <MESSAGE value="change of data sending from member list to sending each every member" />
     <MESSAGE value="create test suite for all mappers FamilyApp" />
-    <option name="LAST_COMMIT_MESSAGE" value="create test suite for all mappers FamilyApp" />
+    <MESSAGE value="create test suite for services FamilyApp" />
+    <option name="LAST_COMMIT_MESSAGE" value="create test suite for services FamilyApp" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SpringBoot$FamilyAppApplication.ic" NAME="FamilyAppApplication Coverage Results" MODIFIED="1674419375040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

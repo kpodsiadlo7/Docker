@@ -13,14 +13,14 @@ spring:
     hibernate:
       ddl-auto: validate
 
-FAMILY:
-  MEMBER:
-    URL: ${FAMILY_MEMBER_URL}
-CREATE:
-  FAMILY:
-    MEMBER:
-      URL: ${CREATE_FAMILY_MEMBER_URL}
-RETURN:
-  FAMILY:
-    MEMBER:
-      URL: ${RETURN_FAMILY_MEMBERS_URL}
+family:
+  member:
+    url: ${FAMILY_MEMBER_URL}
+create:
+  family:
+    member:
+      url: ${CREATE_FAMILY_MEMBER_URL}
+return:
+  family:
+    member:
+      url: ${RETURN_FAMILY_MEMBERS_URL}

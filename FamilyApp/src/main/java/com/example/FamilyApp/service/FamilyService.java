@@ -15,11 +15,11 @@ import org.springframework.web.client.RestTemplate;
 @RequiredArgsConstructor
 public class FamilyService {
 
-    @Value("${RETURN.FAMILY.MEMBER.URL}")
+    @Value("${return.family.member.url}")
     private String RETURN_FAMILY_MEMBERS_URL;
-    @Value("${CREATE.FAMILY.MEMBER.URL}")
+    @Value("${create.family.member.url}")
     private String CREATE_FAMILY_MEMBER_URL;
-    @Value("${FAMILY.MEMBER.URL}")
+    @Value("${family.member.url}")
     private String FAMILY_MEMBER_URL;
     private final FamilyEntityRepository familyEntityRepository;
     private final FamilyMapper familyMapper;
