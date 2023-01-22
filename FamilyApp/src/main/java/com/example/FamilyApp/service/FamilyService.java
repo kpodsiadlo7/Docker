@@ -25,16 +25,6 @@ public class FamilyService {
     private final FamilyMapper familyMapper;
     private final RestTemplate restTemplate;
 
-    private void sendDataToFamilyMemberController(final Family family, final Long familyId, String familyName) {
-        for (FamilyMemberDto dto : family.getFamilyMembersDto()) {
-            log.warn("Data to send");
-            log.info("family given member: " + dto.getGivenName());
-            log.info("family age member: " + dto.getAge());
-            restTemplate.postForLocation(FAMILY_MEMBER_URL + CREATE_FAMILY_MEMBER_URL + "/" + familyId + "/" + familyName, dto);
-        }
-    }
-
-
     public Long createFamily(final Family family) {
         FamilyEntity familyEntity = familyMapper.mapToFamilyEntityFromFamily(family);
         familyEntityRepository.save(familyEntity);
@@ -42,7 +32,7 @@ public class FamilyService {
         return familyEntity.getId();
     }
 
-    public FamilyDto getFamilyWithMembers(final Long familyId) {
+    public Family getFamilyWithMembers(final Long familyId) {
         if (!familyEntityRepository.existsById(familyId))
             throw new IllegalStateException("Family with given id doesn't exist!");
         Family familyFromDb = familyMapper.mapToFamilyFromFamilyEntity(familyEntityRepository.findById(familyId.longValue()), familyId);
@@ -52,14 +42,14 @@ public class FamilyService {
         return dataAggregation(familyFromDb, membersFromAnotherDb);
     }
 
-    public FamilyDto dataAggregation(final Family family, final FamilyMemberDto[] familyMemberDtos) {
+    public Family dataAggregation(final Family family, final FamilyMemberDto[] familyMemberDtos) {
         for (FamilyMemberDto dto : familyMemberDtos)
             family.getFamilyMembersDto().add(dto);
-        return familyMapper.mapToFamilyDtoFromFamily(family);
+        return familyMapper.mapToFamilyFromFamilyDto(familyMapper.mapToFamilyDtoFromFamily(family));
     }
 
     /**
-     * we check whether the number of family members we declare agrees with the quantity we send
+     * checking whether the number of family members we declare agrees with the quantity we send
      */
     public boolean validateFamilyData(final FamilyDto familyDto) {
         if (familyDto.getFamilyMembersDto() == null || familyDto.getFamilyMembersDto().isEmpty() ||
@@ -78,5 +68,14 @@ public class FamilyService {
                 adults--;
         }
         return infants == 0 && children == 0 && adults == 0;
+    }
+
+    private void sendDataToFamilyMemberController(final Family family, final Long familyId, String familyName) {
+        for (FamilyMemberDto dto : family.getFamilyMembersDto()) {
+            log.warn("Data to send");
+            log.info("family given member: " + dto.getGivenName());
+            log.info("family age member: " + dto.getAge());
+            restTemplate.postForLocation(FAMILY_MEMBER_URL + CREATE_FAMILY_MEMBER_URL + "/" + familyId + "/" + familyName, dto);
+        }
     }
 }

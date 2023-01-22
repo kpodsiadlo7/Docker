@@ -24,7 +24,7 @@ public class FamilyDto {
     private List<FamilyMemberDto> familyMembersDto;
 
     /**
-     * This variable is updated only when we use getFamily() to pass to client
+     * This variable is updated only when we use getFamily() for return to client
      */
     private Long familyId;
 }

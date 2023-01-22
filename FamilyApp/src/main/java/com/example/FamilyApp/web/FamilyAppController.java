@@ -19,7 +19,7 @@ public class FamilyAppController {
 
     @GetMapping("/getfamily")
     public ResponseEntity<FamilyDto> getFamily(@RequestParam Long familyId) {
-        return ResponseEntity.ok(familyService.getFamilyWithMembers(familyId));
+        return ResponseEntity.ok(familyMapper.mapToFamilyDtoFromFamily(familyService.getFamilyWithMembers(familyId)));
     }
 
     @Transactional

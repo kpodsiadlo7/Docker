@@ -21,7 +21,7 @@ public class FamilyMapper {
     public Family mapToFamilyFromFamilyDto(final FamilyDto familyDto) {
         return new Family(
                 familyDto.getFamilyName(),
-                0L,
+                familyDto.getFamilyId(),
                 familyDto.getNrOfAdults(),
                 familyDto.getNrOfChildren(),
                 familyDto.getNrOfInfants(),

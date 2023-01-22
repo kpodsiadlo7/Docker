@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="create test suite for services FamilyApp">
-      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/test/java/com/example/FamilyMemberApp/service/FamilyMemberAppTestSuite.java" afterDir="false" />
+    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="create test suite for Family Member App">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyMapperTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyMapperTestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/FamilyAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/FamilyAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyServiceTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyServiceTestSuite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/karol/IdeaProjects/stare projekty/todo-app",
+    "last_opened_file_path": "C:/Users/karol/IdeaProjects/Github aktualne projekty/codewars",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -114,7 +113,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.family-app: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="FamilyAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="FamilyApp" />
@@ -199,8 +198,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
         <item itemvalue="Docker.FamilyApp/Dockerfile test" />
         <item itemvalue="Docker.FamilyApp/Dockerfile development" />
@@ -221,7 +220,7 @@
       <workItem from="1674283591190" duration="2563000" />
       <workItem from="1674287658790" duration="25532000" />
       <workItem from="1674369605779" duration="5530000" />
-      <workItem from="1674375199268" duration="24762000" />
+      <workItem from="1674375199268" duration="27529000" />
     </task>
     <task id="LOCAL-00001" summary="create method to create family in FamilyAppController">
       <created>1674337519174</created>
@@ -279,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674415467857</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="create test suite for Family Member App">
+      <created>1674419778462</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674419778462</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +311,8 @@
     <MESSAGE value="change of data sending from member list to sending each every member" />
     <MESSAGE value="create test suite for all mappers FamilyApp" />
     <MESSAGE value="create test suite for services FamilyApp" />
-    <option name="LAST_COMMIT_MESSAGE" value="create test suite for services FamilyApp" />
+    <MESSAGE value="create test suite for Family Member App" />
+    <option name="LAST_COMMIT_MESSAGE" value="create test suite for Family Member App" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpringBoot$FamilyAppApplication.ic" NAME="FamilyAppApplication Coverage Results" MODIFIED="1674419375040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
