@@ -22,5 +22,9 @@ public class FamilyDto {
     private int nrOfInfants;
     @JsonProperty("familyMembers")
     private List<FamilyMemberDto> familyMembersDto;
+
+    /**
+     * This variable is updated only when we use getFamily() to pass to client
+     */
     private Long familyId;
 }

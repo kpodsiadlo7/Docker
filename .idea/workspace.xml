@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="refactor code">
+    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="change of data sending from member list to sending each every member">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/FamilyMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/FamilyMemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/test/java/com.example.FamilyApp/service/FamilyServiceTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyMapperTestSuite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +92,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.FamilyApp.service" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.FamilyApp.domain" />
     </key>
@@ -109,7 +111,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.family-app: Compose Deployment">
     <configuration name="FamilyAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="FamilyApp" />
@@ -194,8 +196,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
         <item itemvalue="Docker.FamilyApp/Dockerfile test" />
         <item itemvalue="Docker.FamilyApp/Dockerfile development" />
@@ -216,7 +218,7 @@
       <workItem from="1674283591190" duration="2563000" />
       <workItem from="1674287658790" duration="25532000" />
       <workItem from="1674369605779" duration="5530000" />
-      <workItem from="1674375199268" duration="14800000" />
+      <workItem from="1674375199268" duration="18021000" />
     </task>
     <task id="LOCAL-00001" summary="create method to create family in FamilyAppController">
       <created>1674337519174</created>
@@ -253,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674408968604</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change of data sending from member list to sending each every member">
+      <created>1674409861375</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674409861375</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +285,7 @@
     <MESSAGE value="update method to save every family member to db using additional class FamilyMember" />
     <MESSAGE value="application send and receive correct data" />
     <MESSAGE value="refactor code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor code" />
+    <MESSAGE value="change of data sending from member list to sending each every member" />
+    <option name="LAST_COMMIT_MESSAGE" value="change of data sending from member list to sending each every member" />
   </component>
 </project>
