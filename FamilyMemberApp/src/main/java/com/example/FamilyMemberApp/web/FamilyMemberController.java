@@ -17,8 +17,8 @@ public class FamilyMemberController {
     private final FamilyMemberMapper memberMapper;
 
     @PostMapping("/createfamilymember/{familyId}/{familyName}")
-    public void createFamilyMember(@RequestBody final List<FamilyMemberDto> familyMemberDtoList, @PathVariable Long familyId, @PathVariable String familyName) {
-        familyMemberService.createFamilyMembers(memberMapper.mapToFamilyMemberListFromFamilyMemberDtoList(familyMemberDtoList, familyId, familyName));
+    public void createFamilyMember(@RequestBody final FamilyMemberDto familyMemberDto, @PathVariable Long familyId, @PathVariable String familyName) {
+        familyMemberService.createFamilyMembers(memberMapper.mapToFamilyMemberFromFamilyMemberDto(familyMemberDto, familyId, familyName));
     }
 
     @GetMapping("/getfamilymembers/{familyId}")

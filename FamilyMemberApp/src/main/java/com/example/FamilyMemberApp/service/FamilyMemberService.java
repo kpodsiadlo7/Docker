@@ -16,11 +16,8 @@ public class FamilyMemberService {
     private final FamilyMemberRepository familyMemberRepository;
     private final FamilyMemberMapper familyMemberMapper;
 
-    public void createFamilyMembers(final List<FamilyMember> familyMemberList) {
-        for (FamilyMember member : familyMemberList) {
-            familyMemberRepository.save(familyMemberMapper.mapToFamilyMemberEntityFromFamilyMember(member));
-            log.info(member.getFamilyId().toString());
-        }
+    public void createFamilyMembers(final FamilyMember familyMember) {
+            familyMemberRepository.save(familyMemberMapper.mapToFamilyMemberEntityFromFamilyMember(familyMember));
     }
 
     public List<FamilyMemberDto> getFamilyMembersByFamilyId(final Long familyId) {

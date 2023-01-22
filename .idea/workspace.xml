@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="application send and receive correct data">
+    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="refactor code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/FamilyAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/FamilyAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/FamilyMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/FamilyMemberController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +109,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.family-app: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="FamilyAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="FamilyApp" />
@@ -192,8 +194,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
         <item itemvalue="Docker.FamilyApp/Dockerfile test" />
         <item itemvalue="Docker.FamilyApp/Dockerfile development" />
@@ -214,7 +216,7 @@
       <workItem from="1674283591190" duration="2563000" />
       <workItem from="1674287658790" duration="25532000" />
       <workItem from="1674369605779" duration="5530000" />
-      <workItem from="1674375199268" duration="14019000" />
+      <workItem from="1674375199268" duration="14800000" />
     </task>
     <task id="LOCAL-00001" summary="create method to create family in FamilyAppController">
       <created>1674337519174</created>
@@ -244,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674404025119</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor code">
+      <created>1674408968604</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674408968604</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +275,7 @@
     <MESSAGE value="create method to save in family_member_db every family member" />
     <MESSAGE value="update method to save every family member to db using additional class FamilyMember" />
     <MESSAGE value="application send and receive correct data" />
-    <option name="LAST_COMMIT_MESSAGE" value="application send and receive correct data" />
+    <MESSAGE value="refactor code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor code" />
   </component>
 </project>

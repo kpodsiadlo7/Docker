@@ -30,8 +30,8 @@ public class FamilyService {
             log.warn("Data to send");
             log.info("family given member: " + dto.getGivenName());
             log.info("family age member: " + dto.getAge());
+            restTemplate.postForLocation(FAMILY_MEMBER_URL + CREATE_FAMILY_MEMBER_URL + "/" + familyId + "/" + familyName, dto);
         }
-        restTemplate.postForLocation(FAMILY_MEMBER_URL + CREATE_FAMILY_MEMBER_URL + "/" + familyId + "/" + familyName, family.getFamilyMembersDto());
     }
 
 
@@ -69,7 +69,7 @@ public class FamilyService {
         int children = familyDto.getNrOfChildren();
         int adults = familyDto.getNrOfAdults();
 
-        for (FamilyMemberDto member: familyDto.getFamilyMembersDto()) {
+        for (FamilyMemberDto member : familyDto.getFamilyMembersDto()) {
             if (member.getAge() >= 0 && member.getAge() < 4)
                 infants--;
             if (member.getAge() > 4 && member.getAge() < 16)
