@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "b00171eb-f164-4495-893b-2e8d5bb18c07",
+		"name": "Docker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22745001"
+	},
+	"item": [
+		{
+			"name": "Create FamilyGuy family",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"familyName\":\"Family Guy\",\r\n    \"nrOfAdults\": 3,\r\n    \"nrOfChildren\": 2,\r\n    \"nrOfInfants\": 1,\r\n    \"familyMembers\": \r\n    [\r\n        {\r\n            \"givenName\": \"Peter Griffin\",\r\n            \"age\": 42\r\n        },\r\n        {\r\n            \"givenName\": \"Chris Griffin\",\r\n            \"age\": 15\r\n        },\r\n        {\r\n            \"givenName\": \"Lois Griffin\",\r\n            \"age\": 43\r\n        },\r\n        {\r\n            \"givenName\": \"Megatron Griffin\",\r\n            \"age\": 18\r\n        },\r\n        {\r\n            \"givenName\": \"Brain Griffin\",\r\n            \"age\": 10\r\n        },\r\n        {\r\n            \"givenName\": \"Stevie Griffin\",\r\n            \"age\": 2\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/createfamily",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createfamily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Poter family",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"familyName\":\"Poter Big Family\",\r\n    \"nrOfAdults\": 4,\r\n    \"nrOfChildren\": 3,\r\n    \"nrOfInfants\": 1,\r\n    \"familyMembers\": \r\n    [\r\n        {\r\n            \"givenName\": \"Adult\",\r\n            \"age\": 17\r\n        },\r\n        {\r\n            \"givenName\": \"Adult\",\r\n            \"age\": 19\r\n        },\r\n        {\r\n            \"givenName\": \"Infatns\",\r\n            \"age\": 0\r\n        },\r\n        {\r\n            \"givenName\": \"Children\",\r\n            \"age\": 14\r\n        },\r\n        {\r\n            \"givenName\": \"Children\",\r\n            \"age\": 11\r\n        },\r\n        {\r\n            \"givenName\": \"Adult\",\r\n            \"age\": 19\r\n        },\r\n        {\r\n            \"givenName\": \"Adult\",\r\n            \"age\": 22\r\n        },\r\n        {\r\n            \"givenName\": \"Childern\",\r\n            \"age\": 14\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/createfamily",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createfamily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Nowak family",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"familyName\":\"Nowak\",\r\n    \"nrOfAdults\": 2,\r\n    \"nrOfChildren\": 0,\r\n    \"nrOfInfants\": 1,\r\n    \"familyMembers\": \r\n    [\r\n        {\r\n            \"givenName\": \"Dad\",\r\n            \"age\": 34\r\n        },\r\n        {\r\n            \"givenName\": \"Mom\",\r\n            \"age\": 22\r\n        },\r\n        {\r\n            \"givenName\": \"Henry\",\r\n            \"age\": 0\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/createfamily",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createfamily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Incorrect family quantity with send data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"familyName\":\"Poter Big Family\",\r\n    \"nrOfAdults\": 1,\r\n    \"nrOfChildren\": 4,\r\n    \"nrOfInfants\": 1,\r\n    \"familyMembers\": \r\n    [\r\n        {\r\n            \"givenName\": \"poterowy\",\r\n            \"age\": 1\r\n        },\r\n        {\r\n            \"givenName\": \"poterowa\",\r\n            \"age\": 22\r\n        },\r\n        {\r\n            \"givenName\": \"poter\",\r\n            \"age\": 14\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/createfamily",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createfamily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create family with empty familyName",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"familyName\":\"\",\r\n    \"nrOfAdults\": 4,\r\n    \"nrOfChildren\": 3,\r\n    \"nrOfInfants\": 1,\r\n    \"familyMembers\": \r\n    [\r\n        {\r\n            \"givenName\": \"Adult\",\r\n            \"age\": 17\r\n        },\r\n        {\r\n            \"givenName\": \"Adult\",\r\n            \"age\": 19\r\n        },\r\n        {\r\n            \"givenName\": \"Infatns\",\r\n            \"age\": 0\r\n        },\r\n        {\r\n            \"givenName\": \"Children\",\r\n            \"age\": 14\r\n        },\r\n        {\r\n            \"givenName\": \"Children\",\r\n            \"age\": 11\r\n        },\r\n        {\r\n            \"givenName\": \"Adult\",\r\n            \"age\": 19\r\n        },\r\n        {\r\n            \"givenName\": \"Adult\",\r\n            \"age\": 22\r\n        },\r\n        {\r\n            \"givenName\": \"Childern\",\r\n            \"age\": 14\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/createfamily",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createfamily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create family without family member list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"familyName\":\"Poter Big Family\",\r\n    \"nrOfAdults\": 1,\r\n    \"nrOfChildren\": 4,\r\n    \"nrOfInfants\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/createfamily",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createfamily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Empty family member list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"familyName\":\"Poter Big Family\",\r\n    \"nrOfAdults\": 1,\r\n    \"nrOfChildren\": 4,\r\n    \"nrOfInfants\": 1,\r\n    \"familyMembers\": \r\n    [\r\n        {}\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/createfamily",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createfamily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get family id 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/getfamily?familyId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getfamily"
+					],
+					"query": [
+						{
+							"key": "familyId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get family id 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/getfamily?familyId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getfamily"
+					],
+					"query": [
+						{
+							"key": "familyId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
