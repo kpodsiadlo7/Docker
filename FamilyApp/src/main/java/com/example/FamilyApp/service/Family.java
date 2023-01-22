@@ -10,6 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Family {
     private String familyName;
+    private Long familyId;
     private int nrOfAdults;
     private int nrOfChildren;
     private int nrOfInfants;

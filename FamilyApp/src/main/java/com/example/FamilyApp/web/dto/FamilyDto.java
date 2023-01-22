@@ -22,15 +22,5 @@ public class FamilyDto {
     private int nrOfInfants;
     @JsonProperty("familyMembers")
     private List<FamilyMemberDto> familyMembersDto;
-
-    @Override
-    public String toString() {
-        return "FamilyDto{" +
-                "familyName='" + familyName + '\'' +
-                ", nrOfAdults=" + nrOfAdults +
-                ", nrOfChildren=" + nrOfChildren +
-                ", nrOfInfants=" + nrOfInfants +
-                ", familyMembersDto=" + familyMembersDto +
-                '}';
-    }
+    private Long familyId;
 }

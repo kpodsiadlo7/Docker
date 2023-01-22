@@ -20,8 +20,11 @@ services:
   family-app:
     environment:
       - FAMILY_MEMBER_URL=http://family-member-app:8000/
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
       - CREATE_FAMILY_MEMBER_URL= createfamilymember
       - RETURN_FAMILY_MEMBERS_URL= getfamilymembers
+      - POSTGRES_DATABASE_URL=jdbc:postgresql://postgres:5432/postgres
     restart: on-failure
     build:
       context: ./FamilyApp

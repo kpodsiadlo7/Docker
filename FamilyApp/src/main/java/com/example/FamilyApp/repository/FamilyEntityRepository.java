@@ -5,7 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface FamilyRepository extends JpaRepository<FamilyEntity, Long> {
-
+public interface FamilyEntityRepository extends JpaRepository<FamilyEntity, Long> {
     FamilyEntity findById(long familyId);
 }

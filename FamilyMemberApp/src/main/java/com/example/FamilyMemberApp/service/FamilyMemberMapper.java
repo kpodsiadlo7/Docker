@@ -18,17 +18,29 @@ public class FamilyMemberMapper {
         );
     }
 
-    public List<FamilyMember> mapToFamilyMemberListFromFamilyMemberDtoList(final List<FamilyMemberDto> familyMemberDtoList) {
+    public List<FamilyMember> mapToFamilyMemberListFromFamilyMemberDtoList(final List<FamilyMemberDto> familyMemberDtoList, final Long familyId, final String familyName) {
         List<FamilyMember> familyMembers = new ArrayList<>();
         for (FamilyMemberDto dto : familyMemberDtoList) {
             FamilyMember familyMember = new FamilyMember(
-                    dto.getFamilyId(),
+                    familyId,
                     dto.getGivenName(),
-                    dto.getFamilyName(),
+                    familyName,
                     dto.getAge()
             );
             familyMembers.add(familyMember);
         }
         return familyMembers;
+    }
+
+    public List<FamilyMemberDto> mapToFamilyMemberDtoListFromFamilyMemberEntity(final List<FamilyMemberEntity> familyMemberEntities) {
+        List<FamilyMemberDto> familyDtoMembers = new ArrayList<>();
+        for (FamilyMemberEntity entity : familyMemberEntities) {
+            FamilyMemberDto familyMemberDto = new FamilyMemberDto(
+                    entity.getGivenName(),
+                    entity.getAge()
+            );
+            familyDtoMembers.add(familyMemberDto);
+        }
+        return familyDtoMembers;
     }
 }

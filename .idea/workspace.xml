@@ -4,24 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="create method to save in family_member_db every family member">
-      <change afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMember.java" afterDir="false" />
+    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="update method to save every family member to db using additional class FamilyMember">
+      <change afterPath="$PROJECT_DIR$/FamilyApp/src/test/java/com.example.FamilyApp/service/FamilyServiceTestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/repository/FamilyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/repository/FamilyEntityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/Family.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/FamilyAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/FamilyAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/repository/FamilyMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/repository/FamilyMemberRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/service/FamilyMemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/FamilyMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/FamilyMemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/dto/FamilyMemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyMemberApp/src/main/java/com/example/FamilyMemberApp/web/dto/FamilyMemberDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -57,7 +72,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/karol/IdeaProjects/Github aktualne projekty/First-Application-frontend",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/karol/IdeaProjects/Github aktualne projekty/ClinicApp",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "Docker",
     "spring.configuration.checksum": "e38b1e8b5f896cef178ba8f03dc7755c"
@@ -77,8 +96,15 @@
       <recent name="C:\Users\karol\IdeaProjects\do pracy\app\FamilyMemberApp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\karol\IdeaProjects\do pracy\SpringBoot\FamilyApp\scripts" />
       <recent name="C:\Users\karol\IdeaProjects\do pracy\SpringBoot\flyway" />
       <recent name="C:\Users\karol\IdeaProjects\do pracy\SpringBoot\FamilyApp\src\main\resources\db\migration" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.FamilyApp.domain" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -93,22 +119,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.family-member-app: Compose Deployment">
-    <configuration name="FamilyAppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FamilyApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.FamilyApp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.FamilyApp" />
-      <option name="MAIN_CLASS_NAME" value="com.example.FamilyApp.FamilyAppApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="FamilyAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="FamilyApp" />
@@ -123,6 +134,30 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="FamilyApp/Dockerfile development" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="base_development" />
+          <option name="buildCliOptions" value="--target development" />
+          <option name="buildKitEnabled" value="true" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="FamilyApp/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="FamilyApp/Dockerfile test" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="base_test" />
+          <option name="buildCliOptions" value="--target test" />
+          <option name="buildKitEnabled" value="true" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="FamilyApp/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
@@ -158,35 +193,22 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.flyway: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="flyway" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.flyway: Compose Deployment" />
+      <item itemvalue="Docker.FamilyApp/Dockerfile development" />
+      <item itemvalue="Docker.FamilyApp/Dockerfile test" />
+      <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="JUnit.FamilyAppApplicationTests" />
       <item itemvalue="Spring Boot.FamilyAppApplication" />
       <item itemvalue="Spring Boot.FamilyMemberAppApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.family-app: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.flyway: Compose Deployment" />
-        <item itemvalue="JUnit.FamilyAppApplicationTests" />
+        <item itemvalue="Docker.FamilyApp/Dockerfile test" />
+        <item itemvalue="Docker.FamilyApp/Dockerfile development" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +225,8 @@
       <workItem from="1674250428816" duration="6975000" />
       <workItem from="1674283591190" duration="2563000" />
       <workItem from="1674287658790" duration="25532000" />
+      <workItem from="1674369605779" duration="5530000" />
+      <workItem from="1674375199268" duration="9527000" />
     </task>
     <task id="LOCAL-00001" summary="create method to create family in FamilyAppController">
       <created>1674337519174</created>
@@ -218,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674338913531</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update method to save every family member to db using additional class FamilyMember">
+      <created>1674340858758</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674340858758</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +269,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create method to create family in FamilyAppController" />
     <MESSAGE value="create method to save in family_member_db every family member" />
-    <option name="LAST_COMMIT_MESSAGE" value="create method to save in family_member_db every family member" />
+    <MESSAGE value="update method to save every family member to db using additional class FamilyMember" />
+    <option name="LAST_COMMIT_MESSAGE" value="update method to save every family member to db using additional class FamilyMember" />
   </component>
 </project>
