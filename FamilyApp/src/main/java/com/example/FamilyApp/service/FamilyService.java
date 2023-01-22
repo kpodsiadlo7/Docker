@@ -1,7 +1,7 @@
 package com.example.FamilyApp.service;
 
+import com.example.FamilyApp.adapter.AdapterFamilyEntityRepository;
 import com.example.FamilyApp.domain.FamilyEntity;
-import com.example.FamilyApp.repository.FamilyEntityRepository;
 import com.example.FamilyApp.web.dto.FamilyDto;
 import com.example.FamilyApp.web.dto.FamilyMemberDto;
 import lombok.RequiredArgsConstructor;
@@ -21,21 +21,21 @@ public class FamilyService {
     private String CREATE_FAMILY_MEMBER_URL;
     @Value("${family.member.url}")
     private String FAMILY_MEMBER_URL;
-    private final FamilyEntityRepository familyEntityRepository;
+    private final AdapterFamilyEntityRepository adapterFamilyEntityRepository;
     private final FamilyMapper familyMapper;
     private final RestTemplate restTemplate;
 
     public Long createFamily(final Family family) {
         FamilyEntity familyEntity = familyMapper.mapToFamilyEntityFromFamily(family);
-        familyEntityRepository.save(familyEntity);
+        adapterFamilyEntityRepository.save(familyEntity);
         sendDataToFamilyMemberController(family, familyEntity.getId(), familyEntity.getFamilyName());
         return familyEntity.getId();
     }
 
     public Family getFamilyWithMembers(final Long familyId) {
-        if (!familyEntityRepository.existsById(familyId))
+        if (!adapterFamilyEntityRepository.existsById(familyId))
             throw new IllegalStateException("Family with given id doesn't exist!");
-        Family familyFromDb = familyMapper.mapToFamilyFromFamilyEntity(familyEntityRepository.findById(familyId.longValue()), familyId);
+        Family familyFromDb = familyMapper.mapToFamilyFromFamilyEntity(adapterFamilyEntityRepository.findById(familyId), familyId);
         FamilyMemberDto[] membersFromAnotherDb = restTemplate.getForObject(
                 FAMILY_MEMBER_URL + RETURN_FAMILY_MEMBERS_URL + "/" + familyId, FamilyMemberDto[].class);
         assert membersFromAnotherDb != null;

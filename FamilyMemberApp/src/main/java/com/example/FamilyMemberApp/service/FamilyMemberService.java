@@ -1,6 +1,6 @@
 package com.example.FamilyMemberApp.service;
 
-import com.example.FamilyMemberApp.repository.FamilyMemberRepository;
+import com.example.FamilyMemberApp.adapter.AdapterFamilyMemberRepository;
 import com.example.FamilyMemberApp.web.dto.FamilyMemberDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -13,15 +13,15 @@ import java.util.List;
 @RequiredArgsConstructor
 public class FamilyMemberService {
 
-    private final FamilyMemberRepository familyMemberRepository;
+    private final AdapterFamilyMemberRepository adapterFamilyMemberRepository;
     private final FamilyMemberMapper familyMemberMapper;
 
     public void createFamilyMembers(final FamilyMember familyMember) {
-            familyMemberRepository.save(familyMemberMapper.mapToFamilyMemberEntityFromFamilyMember(familyMember));
+        adapterFamilyMemberRepository.save(familyMemberMapper.mapToFamilyMemberEntityFromFamilyMember(familyMember));
     }
 
     public List<FamilyMemberDto> getFamilyMembersByFamilyId(final Long familyId) {
         return familyMemberMapper.mapToFamilyMemberDtoListFromFamilyMemberEntity(
-                familyMemberRepository.findAllByFamilyId(familyId));
+                adapterFamilyMemberRepository.findAllByFamilyId(familyId));
     }
 }

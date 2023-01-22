@@ -1,6 +1,6 @@
 package com.example.FamilyMemberApp.service;
 
-import com.example.FamilyMemberApp.repository.FamilyMemberRepository;
+import com.example.FamilyMemberApp.adapter.AdapterFamilyMemberRepository;
 import com.example.FamilyMemberApp.web.dto.FamilyMemberDto;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
@@ -19,7 +19,7 @@ public class FamilyMemberAppTestSuite {
     @Autowired
     private FamilyMemberMapper familyMemberMapper;
     @Autowired
-    private FamilyMemberRepository familyMemberRepository;
+    private AdapterFamilyMemberRepository adapterFamilyMemberRepository;
     @Autowired
     private FamilyMemberService familyMemberService;
 
@@ -29,9 +29,9 @@ public class FamilyMemberAppTestSuite {
         //given
         FamilyMember familyMember = createAndSaveInDbFamilyMember();
         //when
-        int dbSizeBeforeCreateFamilyMembersMethod = familyMemberRepository.findAll().size();
+        int dbSizeBeforeCreateFamilyMembersMethod = adapterFamilyMemberRepository.findAll().size();
         familyMemberService.createFamilyMembers(familyMember);
-        int dbSizeAfterCreateFamilyMembersMethod = familyMemberRepository.findAll().size();
+        int dbSizeAfterCreateFamilyMembersMethod = adapterFamilyMemberRepository.findAll().size();
         //then
         Assertions.assertEquals(dbSizeBeforeCreateFamilyMembersMethod + 1, dbSizeAfterCreateFamilyMembersMethod);
     }

@@ -1,7 +1,7 @@
 package com.example.FamilyApp.service.mapper;
 
+import com.example.FamilyApp.adapter.AdapterFamilyEntityRepository;
 import com.example.FamilyApp.domain.FamilyEntity;
-import com.example.FamilyApp.repository.FamilyEntityRepository;
 import com.example.FamilyApp.service.Family;
 import com.example.FamilyApp.service.FamilyMapper;
 import com.example.FamilyApp.web.dto.FamilyDto;
@@ -23,7 +23,7 @@ public class FamilyMapperTestSuite {
     @Autowired
     private FamilyMapper familyMapper;
     @Autowired
-    private FamilyEntityRepository familyEntityRepository;
+    private AdapterFamilyEntityRepository adapterFamilyEntityRepository;
 
     @Test
     void testingMapToFamilyEntityFromFamilyWithEmptyFamilyMemberList() {
@@ -89,7 +89,7 @@ public class FamilyMapperTestSuite {
         FamilyEntity familyEntity = familyMapper.mapToFamilyEntityFromFamily(family);
         FamilyMemberDto member1AfterMapFromFamilyDtoToFamily = (FamilyMemberDto) family.getFamilyMembersDto().stream()
                         .map(e -> e.getGivenName().equals("member1"));
-        familyEntityRepository.save(familyEntity);
+        adapterFamilyEntityRepository.save(familyEntity);
         //then
         Assertions.assertEquals(1,familyEntity.getNrOfAdults());
         Assertions.assertEquals(2,familyEntity.getNrOfChildren());
