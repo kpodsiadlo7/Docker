@@ -52,7 +52,7 @@ public class FamilyService {
         return dataAggregation(familyFromDb, membersFromAnotherDb);
     }
 
-    private FamilyDto dataAggregation(final Family family, final FamilyMemberDto[] familyMemberDtos) {
+    public FamilyDto dataAggregation(final Family family, final FamilyMemberDto[] familyMemberDtos) {
         for (FamilyMemberDto dto : familyMemberDtos)
             family.getFamilyMembersDto().add(dto);
         return familyMapper.mapToFamilyDtoFromFamily(family);

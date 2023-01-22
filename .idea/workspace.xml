@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="change of data sending from member list to sending each every member">
+    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="create test suite for all mappers FamilyApp">
+      <change afterPath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyServiceTestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/web/dto/FamilyMemberDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/test/java/com.example.FamilyApp/service/FamilyServiceTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyMapperTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/karol/IdeaProjects/stare projekty/tasks",
+    "last_opened_file_path": "C:/Users/karol/IdeaProjects/stare projekty/todo-app",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -218,7 +217,7 @@
       <workItem from="1674283591190" duration="2563000" />
       <workItem from="1674287658790" duration="25532000" />
       <workItem from="1674369605779" duration="5530000" />
-      <workItem from="1674375199268" duration="18021000" />
+      <workItem from="1674375199268" duration="20405000" />
     </task>
     <task id="LOCAL-00001" summary="create method to create family in FamilyAppController">
       <created>1674337519174</created>
@@ -262,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674409861375</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="create test suite for all mappers FamilyApp">
+      <created>1674413058779</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674413058779</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +292,7 @@
     <MESSAGE value="application send and receive correct data" />
     <MESSAGE value="refactor code" />
     <MESSAGE value="change of data sending from member list to sending each every member" />
-    <option name="LAST_COMMIT_MESSAGE" value="change of data sending from member list to sending each every member" />
+    <MESSAGE value="create test suite for all mappers FamilyApp" />
+    <option name="LAST_COMMIT_MESSAGE" value="create test suite for all mappers FamilyApp" />
   </component>
 </project>
