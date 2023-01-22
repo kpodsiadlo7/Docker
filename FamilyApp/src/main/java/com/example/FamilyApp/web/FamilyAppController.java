@@ -25,7 +25,9 @@ public class FamilyAppController {
     @Transactional
     @PostMapping("/createfamily")
     public ResponseEntity<String> createFamily(@RequestBody FamilyDto familyDto) {
-        log.info(familyDto.toString());
+        if (!familyService.validateFamilyData(familyDto))
+            return ResponseEntity.badRequest().body("Incorrect declared quantity of family members with data which you send, " +
+                                                    "members list or family name is empty");
         return ResponseEntity.ok(String.format("Family nr: %d",
                 familyService.createFamily(familyMapper.mapToFamilyFromFamilyDto(familyDto))));
     }

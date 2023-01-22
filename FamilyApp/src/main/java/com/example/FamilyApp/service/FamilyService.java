@@ -48,6 +48,7 @@ public class FamilyService {
         Family familyFromDb = familyMapper.mapToFamilyFromFamilyEntity(familyEntityRepository.findById(familyId.longValue()), familyId);
         FamilyMemberDto[] membersFromAnotherDb = restTemplate.getForObject(
                 FAMILY_MEMBER_URL + RETURN_FAMILY_MEMBERS_URL + "/" + familyId, FamilyMemberDto[].class);
+        assert membersFromAnotherDb != null;
         return dataAggregation(familyFromDb, membersFromAnotherDb);
     }
 
@@ -55,5 +56,27 @@ public class FamilyService {
         for (FamilyMemberDto dto : familyMemberDtos)
             family.getFamilyMembersDto().add(dto);
         return familyMapper.mapToFamilyDtoFromFamily(family);
+    }
+
+    /**
+     * we check whether the number of family members we declare agrees with the quantity we send
+     */
+    public boolean validateFamilyData(final FamilyDto familyDto) {
+        if (familyDto.getFamilyMembersDto() == null || familyDto.getFamilyMembersDto().isEmpty() ||
+                familyDto.getFamilyName() == null || familyDto.getFamilyName().isBlank())
+            return false;
+        int infants = familyDto.getNrOfInfants();
+        int children = familyDto.getNrOfChildren();
+        int adults = familyDto.getNrOfAdults();
+
+        for (FamilyMemberDto member: familyDto.getFamilyMembersDto()) {
+            if (member.getAge() >= 0 && member.getAge() < 4)
+                infants--;
+            if (member.getAge() > 4 && member.getAge() < 16)
+                children--;
+            if (member.getAge() > 16)
+                adults--;
+        }
+        return infants == 0 && children == 0 && adults == 0;
     }
 }
