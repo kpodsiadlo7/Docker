@@ -36,10 +36,14 @@ public class FamilyService {
         if (!adapterFamilyEntityRepository.existsById(familyId))
             throw new IllegalStateException("Family with given id doesn't exist!");
         Family familyFromDb = familyMapper.mapToFamilyFromFamilyEntity(adapterFamilyEntityRepository.findById(familyId), familyId);
-        FamilyMemberDto[] membersFromAnotherDb = restTemplate.getForObject(
-                FAMILY_MEMBER_URL + RETURN_FAMILY_MEMBERS_URL + "/" + familyId, FamilyMemberDto[].class);
+        FamilyMemberDto[] membersFromAnotherDb = getArrayFamilyMembersFromFamilyMemberDb(familyId);
         assert membersFromAnotherDb != null;
         return dataAggregation(familyFromDb, membersFromAnotherDb);
+    }
+
+    public FamilyMemberDto[] getArrayFamilyMembersFromFamilyMemberDb(final Long familyId) {
+        return restTemplate.getForObject(
+                FAMILY_MEMBER_URL + RETURN_FAMILY_MEMBERS_URL + "/" + familyId, FamilyMemberDto[].class);
     }
 
     public Family dataAggregation(final Family family, final FamilyMemberDto[] familyMemberDtos) {

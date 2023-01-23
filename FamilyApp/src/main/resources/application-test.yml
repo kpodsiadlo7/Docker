@@ -1,0 +1,27 @@
+
+server:
+  port: 9999
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/postgres'
+    driverClassName: 'org.postgresql.Driver'
+    username: 'postgres'
+    password: 'password'
+
+family:
+  member:
+    url: ''
+create:
+  family:
+    member:
+      url: ''
+return:
+  family:
+    member:
+      url: ''
