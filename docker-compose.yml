@@ -33,6 +33,10 @@ services:
       - 8080:8080
 
   family-member-app:
+    environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=password
+    - POSTGRES_DATABASE_URL=jdbc:postgresql://postgres:5432/postgres
     restart: on-failure
     build:
       context: ./FamilyMemberApp
