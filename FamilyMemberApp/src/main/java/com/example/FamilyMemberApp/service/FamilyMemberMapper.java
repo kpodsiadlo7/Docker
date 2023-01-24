@@ -18,7 +18,7 @@ public class FamilyMemberMapper {
         );
     }
 
-    public List<FamilyMemberDto> mapToFamilyMemberDtoListFromFamilyMemberEntity(final List<FamilyMemberEntity> familyMemberEntities) {
+    public List<FamilyMemberDto> mapToFamilyMemberDtoListFromFamilyMemberEntityList(final List<FamilyMemberEntity> familyMemberEntities) {
         List<FamilyMemberDto> familyDtoMembers = new ArrayList<>();
         for (FamilyMemberEntity entity : familyMemberEntities) {
             FamilyMemberDto familyMemberDto = new FamilyMemberDto(

@@ -21,7 +21,7 @@ public class FamilyMemberService {
     }
 
     public List<FamilyMemberDto> getFamilyMembersByFamilyId(final Long familyId) {
-        return familyMemberMapper.mapToFamilyMemberDtoListFromFamilyMemberEntity(
+        return familyMemberMapper.mapToFamilyMemberDtoListFromFamilyMemberEntityList(
                 adapterFamilyMemberRepository.findAllByFamilyId(familyId));
     }
 }
