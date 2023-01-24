@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="refactor">
-      <change afterPath="$PROJECT_DIR$/FamilyApp/src/main/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/config/ContainersEnvironment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/containers/PostgresTestContainers.java" afterDir="false" />
+    <list default="true" id="07422b91-368d-48b8-88f6-48ce3d12dd7d" name="Changes" comment="fix testing method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyMapperTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyMapperTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FamilyApp/src/main/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/main/resources/application-test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyServiceTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyApp/src/test/java/com/example/FamilyApp/service/mapper/FamilyServiceTestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +113,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FamilyServiceTestSuite.testingDataAggregationMethod">
+  <component name="RunManager" selected="JUnit.FamilyServiceTestSuite">
     <configuration name="FamilyMapperTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FamilyApp" />
       <extension name="coverage">
@@ -132,22 +125,6 @@
       <option name="PACKAGE_NAME" value="com.example.FamilyApp.service.mapper" />
       <option name="MAIN_CLASS_NAME" value="com.example.FamilyApp.service.mapper.FamilyMapperTestSuite" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FamilyMapperTestSuite.testingMapToFamilyEntityFromFamilyWithEmptyFamilyMemberList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FamilyApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.FamilyApp.service.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.FamilyApp.service.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.example.FamilyApp.service.mapper.FamilyMapperTestSuite" />
-      <option name="METHOD_NAME" value="testingMapToFamilyEntityFromFamilyWithEmptyFamilyMemberList" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -214,9 +191,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml.family-member-app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="family-member-app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
       <item itemvalue="JUnit.FamilyMapperTestSuite" />
-      <item itemvalue="JUnit.FamilyMapperTestSuite.testingMapToFamilyEntityFromFamilyWithEmptyFamilyMemberList" />
       <item itemvalue="JUnit.FamilyServiceTestSuite" />
       <item itemvalue="JUnit.FamilyServiceTestSuite.getFamilyWithMembersWithFamilyIdWhichIsNotExistInDb" />
       <item itemvalue="JUnit.FamilyServiceTestSuite.testingDataAggregationMethod" />
@@ -225,11 +215,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FamilyServiceTestSuite.testingDataAggregationMethod" />
-        <item itemvalue="JUnit.FamilyServiceTestSuite.getFamilyWithMembersWithFamilyIdWhichIsNotExistInDb" />
         <item itemvalue="JUnit.FamilyServiceTestSuite" />
+        <item itemvalue="JUnit.FamilyServiceTestSuite.testingDataAggregationMethod" />
+        <item itemvalue="Docker.docker-compose.yml.family-member-app: Compose Deployment" />
+        <item itemvalue="JUnit.FamilyServiceTestSuite.getFamilyWithMembersWithFamilyIdWhichIsNotExistInDb" />
         <item itemvalue="JUnit.FamilyMapperTestSuite" />
-        <item itemvalue="JUnit.FamilyMapperTestSuite.testingMapToFamilyEntityFromFamilyWithEmptyFamilyMemberList" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +244,7 @@
       <workItem from="1674485358971" duration="1667000" />
       <workItem from="1674491990962" duration="111000" />
       <workItem from="1674497731535" duration="1902000" />
-      <workItem from="1674508421710" duration="8300000" />
+      <workItem from="1674508421710" duration="9802000" />
     </task>
     <task id="LOCAL-00001" summary="create method to create family in FamilyAppController">
       <created>1674337519174</created>
@@ -333,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674492096068</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix testing method">
+      <created>1674516965557</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674516965557</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +358,19 @@
     <MESSAGE value="create test suite for services FamilyApp" />
     <MESSAGE value="create test suite for Family Member App" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="fix testing method" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix testing method" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/FamilyApp/src/main/java/com/example/FamilyApp/service/FamilyService.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpringBoot$FamilyAppApplication.ic" NAME="FamilyAppApplication Coverage Results" MODIFIED="1674419375040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

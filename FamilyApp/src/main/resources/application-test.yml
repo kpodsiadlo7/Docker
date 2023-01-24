@@ -16,12 +16,12 @@ spring:
 
 family:
   member:
-    url: ''
+    url: 'http://family-member-app:8000/'
 create:
   family:
     member:
-      url: ''
+      url: 'createfamilymember'
 return:
   family:
     member:
-      url: ''
+      url: 'getfamilymembers'
